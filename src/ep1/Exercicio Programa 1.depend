@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1568813680 source:c:\users\vandersonsantos\desktop\poli 2019\2º semestre\pcs(lab. de programação)\ep1\exercicio programa 1\equipe.cpp
+	"Equipe.h"
+
+1568813232 c:\users\vandersonsantos\desktop\poli 2019\2º semestre\pcs(lab. de programação)\ep1\exercicio programa 1\equipe.h
+	<iostream>
+	<string>
+
+1568824144 source:c:\users\vandersonsantos\desktop\poli 2019\2º semestre\pcs(lab. de programação)\ep1\exercicio programa 1\main.cpp
+	"Equipe.h"
+	"Modalidade.h"
+
+1568824782 c:\users\vandersonsantos\desktop\poli 2019\2º semestre\pcs(lab. de programação)\ep1\exercicio programa 1\modalidade.h
+	"Equipe.h"
+
