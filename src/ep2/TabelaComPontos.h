@@ -1,3 +1,13 @@
+/**
+ * @file TabelaComPontos.h
+ *
+ * @author Vanderson Santos <vanderson.santos@usp.br>
+ *
+ * @date 12/2019
+ *
+ * @copyright MIT License - Copyright (c) 2021 Vanderson Santos
+ */
+
 #ifndef TABELACOMPONTOS_H
 #define TABELACOMPONTOS_H
 #include "Tabela.h"
@@ -14,14 +24,14 @@ class TabelaComPontos :
         TabelaComPontos(Equipe** participantes, int quantidade);
         virtual ~TabelaComPontos();
 
-// funções herdadas da classe abstrata:
+// funï¿½ï¿½es herdadas da classe abstrata:
         Equipe** getEquipesEmOrdem();
 
         int getPosicao(Equipe* participante);
 
         void imprimir();
 
-// funções da tabela com ordem:
+// funï¿½ï¿½es da tabela com ordem:
         int getPontos(Equipe* participante);
 
         void pontuar(Equipe* participante, int pontos);
