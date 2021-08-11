@@ -9,6 +9,7 @@ Esse repositório apresenta conceitos de :
 - Namespaces
 - Templates
 - Biblioteca Padrão
+- Persistência em Arquivo
 
 ## Conceitos de orientação a objetos:
 - Encapsulamento
@@ -18,7 +19,7 @@ Esse repositório apresenta conceitos de :
 - Heranca Multipla
 - Classes Abstratas 
 - Programação Defensiva
-- Persistência em Arquivo
+
 
 
 ## Exercício programas: 
