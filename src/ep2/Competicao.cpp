@@ -8,32 +8,28 @@
 
 using namespace std;
 
-Competicao::Competicao(string nome, Equipe** equipes, int quantidade)
-{
-    if(quantidade<2){
+Competicao::Competicao(string nome, Equipe** equipes, int quantidade) {
+    if (quantidade < 2) {
         throw new invalid_argument("ha menos de duas equipes(erro construtor competicao)");
     }
 
-    this->nome=nome;
-    this->equipes=equipes;
-    this->quantidade=quantidade;
+    this->nome = nome;
+    this->equipes = equipes;
+    this->quantidade = quantidade;
 }
 
-Competicao::~Competicao()
-{
+Competicao::~Competicao() {
     cout<<"Competicao "<<this->getNome()<<" Destruida"<<endl;
 }
 
-string Competicao::getNome(){
+string Competicao::getNome() {
     return nome;
 }
 
-Equipe** Competicao::getEquipes(){
+Equipe** Competicao::getEquipes() {
     return equipes;
 }
 
-int Competicao::getQuantidadeDeEquipes(){
+int Competicao::getQuantidadeDeEquipes() {
     return quantidade;
 }
-
-

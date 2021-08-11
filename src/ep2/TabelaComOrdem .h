@@ -1,3 +1,13 @@
+/**
+ * @file TabelaComOrdem.h
+ *
+ * @author Vanderson Santos <vanderson.santos@usp.br>
+ *
+ * @date 12/2019
+ *
+ * @copyright MIT License - Copyright (c) 2021 Vanderson Santos
+ */
+
 #ifndef TABELACOMORDEM _H
 #define TABELACOMORDEM _H
 
@@ -14,12 +24,12 @@ class TabelaComOrdem: public Tabela {
         TabelaComOrdem (Equipe** participantes, int quantidade);
         virtual ~TabelaComOrdem();
 
-        // funções herdadas da classe abstrata:
+        // funï¿½ï¿½es herdadas da classe abstrata:
         Equipe** getEquipesEmOrdem();
         int getPosicao (Equipe* participante);
         void imprimir();
 
-        //funções da tabela com ordem:
+        //funï¿½ï¿½es da tabela com ordem:
         void setResultado(Equipe** ordem);
 
     protected:

@@ -8,27 +8,33 @@
 
 using namespace std;
 
-class Modalidade
-{
+class Modalidade {
     public:
-       Modalidade(string nome, Equipe** participantes, int quantidade);
-       virtual ~Modalidade();
-       virtual string getNome();
-       virtual Equipe** getEquipes();
-       virtual int getQuantidadeDeEquipes();
-       virtual void setResultado(Equipe** ordem);
-       virtual bool temResultado();
-       virtual TabelaComOrdem* getTabela();
-       virtual void imprimir();
-       virtual Equipe** getOrdem();
+        Modalidade(string nome, Equipe** participantes, int quantidade);
+        virtual ~Modalidade();
+        virtual string getNome();
+
+        virtual Equipe** getEquipes();
+
+        virtual int getQuantidadeDeEquipes();
+
+        virtual void setResultado(Equipe** ordem);
+
+        virtual bool temResultado();
+
+        virtual TabelaComOrdem* getTabela();
+
+        virtual void imprimir();
+
+        virtual Equipe** getOrdem();
 
     protected:
-       string nome;
-       int quantidade;
-       bool ResultadoSetado;
-       Equipe** participantes;
-       Equipe** ordem;
-       TabelaComOrdem* Tabela;
+        string nome;
+        int quantidade;
+        bool ResultadoSetado;
+        Equipe** participantes;
+        Equipe** ordem;
+        TabelaComOrdem* Tabela;
 };
 
-#endif // MODALIDADE_H
+#endif  // MODALIDADE_H

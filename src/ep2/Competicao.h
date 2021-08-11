@@ -10,17 +10,20 @@
 
 using namespace std;
 
-class Competicao
-{
+class Competicao {
     public:
         Competicao(string nome, Equipe** equipes, int quantidade);
         virtual ~Competicao();
 
         virtual string getNome();
+
         virtual Equipe** getEquipes();
+
         virtual int getQuantidadeDeEquipes();
-        virtual Tabela* getTabela()=0;
-        virtual void imprimir()=0;
+
+        virtual Tabela* getTabela() = 0;
+
+        virtual void imprimir() = 0;
 
     protected:
         string nome;
@@ -28,4 +31,4 @@ class Competicao
         int quantidade;
 };
 
-#endif // COMPETICAO_H
+#endif  // COMPETICAO_H

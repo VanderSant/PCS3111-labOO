@@ -11,29 +11,27 @@
 
 using namespace std;
 
-CompeticaoSimples::CompeticaoSimples(string nome, Equipe** equipes, int quantidade, Modalidade* m):
-    Competicao(nome,equipes,quantidade)
-{
-    this->m= m;
-    //Tabela= new TabelaComOrdem(equipes,quantidade);
-    //talvez precise;
+CompeticaoSimples::CompeticaoSimples(string nome, Equipe** equipes, int quantidade, Modalidade* m) :
+    Competicao(nome, equipes, quantidade) {
+    this->m = m;
 
+    // Tabela= new TabelaComOrdem(equipes,quantidade);
+    // talvez precise;
 }
 
-CompeticaoSimples::~CompeticaoSimples()
-{
+CompeticaoSimples::~CompeticaoSimples() {
     cout<<"Competicao Simples "<<this->getNome()<<" Destruida"<<endl;
 }
 
-Tabela* CompeticaoSimples::getTabela(){
+Tabela* CompeticaoSimples::getTabela() {
     return m->getTabela();
 }
 
-void CompeticaoSimples::imprimir(){
+void CompeticaoSimples::imprimir() {
     cout<<"COMPETICAO: "<<nome<<endl;
     m->imprimir();
 }
 
-Modalidade* CompeticaoSimples::getModalidade(){
+Modalidade* CompeticaoSimples::getModalidade() {
     return m;
 }

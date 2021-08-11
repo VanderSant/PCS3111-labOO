@@ -8,26 +8,28 @@
 
 using namespace std;
 
-class TabelaComPontos: public Tabela
-{
+class TabelaComPontos :
+    public Tabela {
     public:
-        TabelaComPontos (Equipe** participantes, int quantidade);
+        TabelaComPontos(Equipe** participantes, int quantidade);
         virtual ~TabelaComPontos();
 
 // funções herdadas da classe abstrata:
         Equipe** getEquipesEmOrdem();
-        int getPosicao (Equipe* participante);
+
+        int getPosicao(Equipe* participante);
+
         void imprimir();
 
-//funções da tabela com ordem:
-        int getPontos (Equipe* participante);
-        void pontuar (Equipe* participante, int pontos);
+// funções da tabela com ordem:
+        int getPontos(Equipe* participante);
+
+        void pontuar(Equipe* participante, int pontos);
 
     protected:
         bool ResultadoSetado;
         int* PontuacaoParticipantes;
         Equipe** ordem;
-
 };
 
-#endif // TABELACOMPONTOS_H
+#endif  // TABELACOMPONTOS_H

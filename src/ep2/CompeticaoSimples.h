@@ -12,21 +12,20 @@
 
 using namespace std;
 
-class CompeticaoSimples:public Competicao
-{
+class CompeticaoSimples :
+    public Competicao {
     public:
         CompeticaoSimples(string nome, Equipe** equipes, int quantidade, Modalidade* m);
         virtual ~CompeticaoSimples();
 
         Tabela* getTabela();
+
         void imprimir();
 
         Modalidade* getModalidade();
 
-
     protected:
         Modalidade* m;
-
 };
 
-#endif // COMPETICAOSIMPLES_H
+#endif  // COMPETICAOSIMPLES_H

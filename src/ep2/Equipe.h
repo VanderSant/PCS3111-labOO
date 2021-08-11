@@ -6,17 +6,16 @@
 
 using namespace std;
 
+class Equipe {
+    public:
+        Equipe(string nome);
+        virtual ~Equipe();
+        virtual string getNome();
 
-class Equipe
-{
-public:
-    Equipe(string nome);
-    virtual ~Equipe();
-    virtual string getNome();
-    virtual void imprimir();
+        virtual void imprimir();
 
-protected:
-    string nome;
+    protected:
+        string nome;
 };
 
-#endif // EQUIPE_H
+#endif  // EQUIPE_H

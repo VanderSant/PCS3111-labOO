@@ -17,28 +17,33 @@
 
 using namespace std;
 
-class CompeticaoMultimodalidades:public Competicao
-{
+class CompeticaoMultimodalidades :
+    public Competicao {
     public:
         CompeticaoMultimodalidades(string nome, Equipe** equipes, int quantidade);
         virtual ~CompeticaoMultimodalidades();
 
         Tabela* getTabela();
+
         void imprimir();
 
         void adicionar(Modalidade* m);
-        list<Modalidade*>* getModalidades();
-        static void setPontuacao(vector<int>* pontos);
-        static int getPontoPorPosicao(int posicao);
-        TabelaComPontos* gett1();
 
+        list<Modalidade*>* getModalidades();
+
+        static void setPontuacao(vector<int>* pontos);
+
+        static int getPontoPorPosicao(int posicao);
+
+        TabelaComPontos* gett1();
 
     protected:
         list<Modalidade*>* Modalidades;
         TabelaComPontos* t1;
         Tabela* tabelaNecessaria;
+
     private:
         static vector<int>* PontoPosicao;
 };
 
-#endif // COMPETICAOMULTIMODALIDADES_H
+#endif  // COMPETICAOMULTIMODALIDADES_H

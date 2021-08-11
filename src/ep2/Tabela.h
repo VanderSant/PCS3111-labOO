@@ -7,21 +7,22 @@
 
 using namespace std;
 
-class Tabela
-{
+class Tabela {
     public:
         Tabela(Equipe** participantes, int quantidade);
         virtual ~Tabela();
 
-        virtual int getPosicao (Equipe* participante)=0;
-        virtual Equipe** getEquipesEmOrdem()=0;
+        virtual int getPosicao(Equipe* participante) = 0;
+
+        virtual Equipe** getEquipesEmOrdem() = 0;
+
         virtual int getQuantidadeDeEquipes();
-        virtual void imprimir()=0;
+
+        virtual void imprimir() = 0;
 
     protected:
         Equipe** participantes;
         int quantidade;
-
 };
 
-#endif // TABELA_H
+#endif  // TABELA_H

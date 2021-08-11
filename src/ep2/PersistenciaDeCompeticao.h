@@ -17,14 +17,13 @@
 
 using namespace std;
 
-
-class PersistenciaDeCompeticao
-{
+class PersistenciaDeCompeticao {
     public:
         PersistenciaDeCompeticao();
         virtual ~PersistenciaDeCompeticao();
 
         Competicao* carregar(string arquivo);
+
         void salvar(string arquivo, Competicao* c);
 
     protected:
@@ -36,9 +35,6 @@ class PersistenciaDeCompeticao
         Equipe** ordemCM;
         Modalidade** modalidadesCompeticao;
         Equipe** equipesCompeticao;
-
-
-
 };
 
-#endif // PERSISTENCIADECOMPETICAO_H
+#endif  // PERSISTENCIADECOMPETICAO_H

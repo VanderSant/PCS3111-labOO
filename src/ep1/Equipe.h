@@ -7,14 +7,15 @@
 using namespace std;
 
 class Equipe {
-  private:
-  string nome;
+    private:
+        string nome;
 
-  public:
-  Equipe(string nome);
-  ~Equipe();
-  string getNome();
-  void imprimir();
+    public:
+        Equipe(string nome);
+        ~Equipe();
+        string getNome();
+
+        void imprimir();
 };
 
-#endif // EQUIPE_H
+#endif  // EQUIPE_H
