@@ -1,3 +1,13 @@
+/**
+ * @file Competicao.h
+ *
+ * @author Vanderson Santos <vanderson.santos@usp.br>
+ *
+ * @date 12/2019
+ *
+ * @copyright MIT License - Copyright (c) 2021 Vanderson Santos
+ */
+
 #ifndef COMPETICAO_H
 #define COMPETICAO_H
 

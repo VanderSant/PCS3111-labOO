@@ -1,3 +1,13 @@
+/**
+ * @file Modalidade.cpp
+ *
+ * @author Vanderson Santos <vanderson.santos@usp.br>
+ *
+ * @date 12/2019
+ *
+ * @copyright MIT License - Copyright (c) 2021 Vanderson Santos
+ */
+
 #include "Modalidade.h"
 #include "TabelaComOrdem .h"
 #include "Equipe.h"
@@ -42,7 +52,7 @@ void Modalidade::setResultado(Equipe** ordem) {
     this->ResultadoSetado = true;
     Tabela->setResultado(ordem);
 
-    // CONFERIR ESSA FUNÇÂO DEPOIS!!!!!!!!!!!!!!!!!!!
+    // CONFERIR ESSA FUNï¿½ï¿½O DEPOIS!!!!!!!!!!!!!!!!!!!
 }
 
 bool Modalidade::temResultado() {
